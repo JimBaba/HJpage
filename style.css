@@ -1,0 +1,63 @@
+main {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "Header Header Header"
+                         ". Img ."
+                         ". h2 . "
+                         " . list ."
+                         ". quote ."
+                         "link link link";
+    justify-items: center;
+    align-items: center;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+#img-div {
+    grid-column-start: 2;
+}
+
+#title {
+    grid-area: Header;
+    background-color: grey;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+#title p {
+    display: inline-block;
+    padding: 1px;
+    margin: 10px;
+}
+
+h2 {
+    grid-area: h2;
+}
+
+#tribute-info {
+    grid-area: list;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+#img-caption {
+    font-size: 13px;
+}
+
+#quote {
+    grid-area: quote;
+    font-style: italic;
+}
+
+#info {
+    grid-area: link;
+    background-color: grey;
+    width: 100%;
+}
